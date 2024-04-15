@@ -1,0 +1,47 @@
+/* CSS-kod för att förbättra formulärets layout */
+
+/* Marginal mellan varje formulärelement */
+form div {
+    margin-bottom: 10px;
+}
+
+/* Stilar för namnfältet */
+#namn {
+    display: flex; /* Använd flexbox för att justera layouten */
+    width: 150px; /* Ange en fast bredd för att kontrollera storleken */
+}
+
+/* Stilar för telefonfältet */
+#telefon {
+    display: flex; /* Använd flexbox för att justera layouten */
+    width: 150px; /* Ange en fast bredd för att kontrollera storleken */
+}
+
+/* Stilar för prioritet-dropdown */
+#prioritet {
+    display: flex; /* Använd flexbox för att justera layouten */
+    border-radius: 5px; /* Lägg till lite rundade kanter för estetik */
+}
+
+/* Stilar för radioknappar */
+.radio-group label {
+    display: block; /* Gör varje radioknapp till ett blockelement för enkel layouthantering */
+}
+
+/* Stilar för kategoridropdown */
+#kategori {
+    display: flex; /* Använd flexbox för att justera layouten */
+    border-radius: 5px; /* Lägg till lite rundade kanter för estetik */
+}
+
+/* Stilar för rubrikfältet */
+#rubrik {
+    display: flex; /* Använd flexbox för att justera layouten */
+    width: 150px; /* Ange en fast bredd för att kontrollera storleken */
+}
+
+/* Stilar för beskrivningsområdet */
+#beskrivning {
+    display: flex; /* Använd flexbox för att justera layouten */
+    width: 200px; /* Ange en fast bredd för att kontrollera storleken */
+}

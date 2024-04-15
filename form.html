@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supportformulär</title>
+  <!-- Länkar till extern CSS-fil -->
+  <link rel="stylesheet" href="styleform.css">
+</head>
+<body>
+  <h2>Supportärende</h2>
+  <form action="https://staff.www.ltu.se/~susfah/uppgift3b/parse_form.php" method="POST">
+    <!-- Namn -->
+    <div>
+      <label for="namn">Ditt namn:</label>
+      <input type="text" id="namn" name="namn" placeholder="Ange ditt namn" autofocus required> <!-- Textinmatning för namn, krävs att fältet fylls i -->
+    </div>
+    <!-- Telefon -->
+    <div>
+      <label for="telefon">Telefon:</label>
+      <input type="tel" id="telefon" name="telefon" placeholder="Ange ditt telefonnummer" required> <!-- Textinmatning för telefonnummer, krävs att fältet fylls i -->
+    </div>
+    <!-- Prioritet -->
+    <div>
+      <label for="prioritet">Prioritet:</label>
+      <select id="prioritet" name="prioritet" required> <!-- Dropdown-lista för prioritet, krävs att ett alternativ väljs -->
+        <option value="">Välj prioritet</option> <!-- Tomt värde för första alternativet -->
+        <option value="1">Låg</option>
+        <option value="2">Normal</option>
+        <option value="3">Hög</option>
+      </select>
+    </div>
+    <!-- Tilldela till ort -->
+    <div class="radio-group"> <!-- Div-element för radioknapparna -->
+      <label>Tilldela till ort:</label>
+      <label>
+        <input type="radio" name="ort" value="gbg" required> <!-- Radioknapp för Göteborg -->
+        Göteborg
+      </label>
+      <label>
+        <input type="radio" name="ort" value="sthlm" required> <!-- Radioknapp för Stockholm -->
+        Stockholm
+      </label>
+      <label>
+        <input type="radio" name="ort" value="ume" required> <!-- Radioknapp för Umeå -->
+        Umeå
+      </label>
+      <label>
+        <input type="radio" name="ort" value="lule" required> <!-- Radioknapp för Luleå -->
+        Luleå
+      </label>
+    </div>    
+    <!-- Kategori -->
+    <div>
+      <label for="kategori">Kategori:</label>
+      <select id="kategori" name="kategori" required> <!-- Dropdown-lista för kategori, krävs att ett alternativ väljs -->
+        <option value="">Välj kategori</option> <!-- Tomt värde för första alternativet -->
+        <option value="fakt">Fakturering</option>
+        <option value="net">Internet</option>
+        <option value="tel">Telefoni</option>
+        <option value="epost">E-post</option>
+      </select>
+    </div>
+    <!-- Rubrik -->
+    <div>
+      <label for="rubrik">Rubrik:</label>
+      <input type="text" id="rubrik" name="rubrik" placeholder="Ange en rubrik" required> <!-- Textinmatning för rubrik, krävs att fältet fylls i -->
+    </div>
+    <!-- Beskrivning -->
+    <div>
+      <label for="beskrivning">Beskrivning:</label>
+      <textarea id="beskrivning" name="beskrivning" rows="4" placeholder="Beskriv ditt ärende här" required></textarea> <!-- Textområde för beskrivning, krävs att fältet fylls i -->
+    </div>
+    <!-- Submit-knapp -->
+    <button type="submit" name="skicka" value="Submit">Submit</button>
+    <!-- Reset-knapp -->
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>
